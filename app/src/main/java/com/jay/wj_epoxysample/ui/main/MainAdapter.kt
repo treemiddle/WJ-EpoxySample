@@ -1,9 +1,12 @@
-package com.jay.wj_epoxysample
+package com.jay.wj_epoxysample.ui.main
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.jay.wj_epoxysample.HorizontalHolder
+import com.jay.wj_epoxysample.R
+import com.jay.wj_epoxysample.TextHolder
 import com.jay.wj_epoxysample.model.BaseModel
 import com.jay.wj_epoxysample.model.HorizontalModel
 import com.jay.wj_epoxysample.model.HorizontalType

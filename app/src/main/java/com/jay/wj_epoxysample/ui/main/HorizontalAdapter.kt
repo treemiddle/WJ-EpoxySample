@@ -1,9 +1,13 @@
-package com.jay.wj_epoxysample
+package com.jay.wj_epoxysample.ui.main
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.jay.wj_epoxysample.FristFeedHolder
+import com.jay.wj_epoxysample.R
+import com.jay.wj_epoxysample.SecondFeedHolder
+import com.jay.wj_epoxysample.ThirdFeedHolder
 import com.jay.wj_epoxysample.model.FeedModel
 import com.jay.wj_epoxysample.model.FirstFeed
 import com.jay.wj_epoxysample.model.SecondFeed
