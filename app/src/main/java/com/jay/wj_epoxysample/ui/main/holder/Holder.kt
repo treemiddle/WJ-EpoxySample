@@ -6,6 +6,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.jay.wj_epoxysample.model.*
+import com.jay.wj_epoxysample.ui.main.HorizontalAdapter
 
 class TextHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val tvTitle: TextView = itemView.findViewById(R.id.tv_header)
