@@ -1,4 +1,4 @@
-package com.jay.wj_epoxysample.ui.epoxy
+package com.jay.wj_epoxysample.ui.epoxy.kotlin
 
 import android.view.View
 import com.airbnb.epoxy.EpoxyHolder

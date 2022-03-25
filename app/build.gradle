@@ -52,6 +52,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation "com.airbnb.android:epoxy:5.0.0-beta03"
-    annotationProcessor "com.airbnb.android:epoxy-processor:5.0.0-beta03"
+    //annotationProcessor "com.airbnb.android:epoxy-processor:5.0.0-beta03"
+    kapt "com.airbnb.android:epoxy-processor:5.0.0-beta03"
     implementation "com.airbnb.android:epoxy-databinding:5.0.0-beta03"
 }

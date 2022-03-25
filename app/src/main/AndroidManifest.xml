@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WJEpoxySample">
         <activity
+            android:name=".ui.epoxy.SamethingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.epoxy.UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.epoxy.PagingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.epoxy.GridActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.epoxy.LinearActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.epoxy.EpoxyActivity"
             android:exported="false" />
         <activity
