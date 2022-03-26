@@ -24,7 +24,7 @@ class EpoxyActivity : AppCompatActivity() {
     private fun initListeners() {
         btnLinear.setOnClickListener { moveTo(LinearActivity::class.java) }
         btnGrid.setOnClickListener { moveTo(GridActivity::class.java) }
-        btnPaging.setOnClickListener { moveTo(PagingActivity::class.java) }
+        btnPaging.setOnClickListener { moveTo(LoadMoreActivity::class.java) }
         btnUpdate.setOnClickListener { moveTo(UpdateActivity::class.java) }
         btnSamething.setOnClickListener { moveTo(SamethingActivity::class.java) }
     }

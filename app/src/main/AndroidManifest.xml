@@ -16,7 +16,7 @@
             android:name=".ui.epoxy.UpdateActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.epoxy.PagingActivity"
+            android:name=".ui.epoxy.LoadMoreActivity"
             android:exported="false" />
         <activity
             android:name=".ui.epoxy.GridActivity"
