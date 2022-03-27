@@ -1,16 +1,15 @@
 package com.jay.wj_epoxysample.ui.epoxy
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.airbnb.epoxy.CarouselModel_
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
+import com.airbnb.epoxy.EpoxyModel
 import com.airbnb.epoxy.EpoxyRecyclerView
 import com.airbnb.epoxy.carousel
 import com.jay.wj_epoxysample.R
 import com.jay.wj_epoxysample.ui.epoxy.epoxy_holder.EpoxyViewFirstModel_
 import com.jay.wj_epoxysample.ui.epoxy.epoxy_holder.EpoxyViewSecondModel_
-import com.jay.wj_epoxysample.ui.epoxy.epoxy_holder.ItemEpoxyHolder_
+import com.jay.wj_epoxysample.ui.epoxy.epoxy_holder.epoxyViewThird
 import com.jay.wj_epoxysample.ui.epoxy.epoxy_holder.itemEpoxyHolder
 import com.jay.wj_epoxysample.ui.epoxy.epoxy_model.EpoxyDataClass
 import com.jay.wj_epoxysample.ui.epoxy.model.EpoxySampleData
@@ -25,10 +24,14 @@ class SamethingActivity : AppCompatActivity() {
 
         epoxyRecyclerView = findViewById(R.id.rv_epoxy)
         epoxyRecyclerView.run {
-            layoutManager = LinearLayoutManager(this@SamethingActivity)
+            //layoutManager = LinearLayoutManager(this@SamethingActivity)
         }
 
         epoxyRecyclerView.withModels {
+            epoxyRecyclerView.layoutManager = GridLayoutManager(this@SamethingActivity, 2).apply {
+                spanSizeLookup = this@withModels.spanSizeLookup
+            }
+
             EpoxyDataClass(
                 EpoxySampleData(
                     name = "",
@@ -38,12 +41,18 @@ class SamethingActivity : AppCompatActivity() {
                     title = "title 1"
                 )
             )
-                    .id("epoxy sample id: 1")
-                    .addTo(this)
+                .id("epoxy sample id: 1")
+                .spanSizeOverride(EpoxyModel.SpanSizeOverrideCallback { totalSpanCount, position, itemCount ->
+                    return@SpanSizeOverrideCallback 2
+                })
+                .addTo(this)
 
             carousel {
                 id("carousel 1")
                 models(createFirstHorizontalScrollModels())
+//                    spanSizeOverride(EpoxyModel.SpanSizeOverrideCallback { _, _, _ ->
+//                        return@SpanSizeOverrideCallback 2
+//                    })
             }
 
             EpoxyDataClass(
@@ -56,11 +65,15 @@ class SamethingActivity : AppCompatActivity() {
                 )
             )
                 .id("epoxy sample id: 2")
+                .spanSizeOverride { _, _, _ -> 2 }
                 .addTo(this)
 
             carousel {
                 id("carousel 2")
                 models(createSecondHorizontalScrollModels())
+//                spanSizeOverride(EpoxyModel.SpanSizeOverrideCallback { _, _, _ ->
+//                    return@SpanSizeOverrideCallback 2
+//                })
             }
 
             EpoxyDataClass(
@@ -72,6 +85,25 @@ class SamethingActivity : AppCompatActivity() {
                     title = "title 3"
                 )
             )
+                .id("epoxy sample id: 2")
+                .spanSizeOverride { _, _, _ -> 2 }
+                .addTo(this)
+
+            for (i in 0..7) {
+                epoxyViewThird {
+                    id("view third id: $i")
+                    title("title? -> :$i")
+                    spanSizeOverride { _, _, _ -> 1 }
+                }
+            }
+
+            for (i in 0..99) {
+                itemEpoxyHolder {
+                    id("holder id: $i")
+                    name("my name: $i")
+                    spanSizeOverride { _, _, _ -> 2 }
+                }
+            }
         }
     }
 

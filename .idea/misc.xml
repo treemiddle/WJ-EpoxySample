@@ -21,10 +21,12 @@
         <entry key="app/src/main/res/layout/epoxy_view_holder.xml" value="0.23529411764705882" />
         <entry key="app/src/main/res/layout/epoxy_view_load_more.xml" value="0.3390625" />
         <entry key="app/src/main/res/layout/epoxy_view_second.xml" value="0.4121376811594203" />
+        <entry key="app/src/main/res/layout/epoxy_view_text.xml" value="0.2730496453900709" />
+        <entry key="app/src/main/res/layout/epoxy_view_third.xml" value="0.2730496453900709" />
         <entry key="app/src/main/res/layout/item_chip.xml" value="0.5614583333333333" />
         <entry key="app/src/main/res/layout/item_feed_first.xml" value="0.5614583333333333" />
         <entry key="app/src/main/res/layout/item_feed_second.xml" value="0.5614583333333333" />
-        <entry key="app/src/main/res/layout/item_feed_third.xml" value="0.5614583333333333" />
+        <entry key="app/src/main/res/layout/item_feed_third.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_header_text.xml" value="0.1636308439587128" />
         <entry key="app/src/main/res/layout/test_test.xml" value="0.36277173913043476" />
         <entry key="app/src/main/res/layout/vertical_linear_group.xml" value="0.3234375" />
