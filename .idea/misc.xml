@@ -4,12 +4,33 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.326" />
+        <entry key="app/src/main/res/layout/activity_epoxy.xml" value="0.2730496453900709" />
+        <entry key="app/src/main/res/layout/activity_epoxy_recycler_view.xml" value="0.23529411764705882" />
+        <entry key="app/src/main/res/layout/activity_linear.xml" value="0.36277173913043476" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2542372881355932" />
+        <entry key="app/src/main/res/layout/colored_square_view.xml" value="0.3234375" />
+        <entry key="app/src/main/res/layout/data_class_item.xml" value="0.3234375" />
+        <entry key="app/src/main/res/layout/decorated_linear_group.xml" value="0.3234375" />
+        <entry key="app/src/main/res/layout/epoxy_data_class.xml" value="0.36277173913043476" />
+        <entry key="app/src/main/res/layout/epoxy_item_holder.xml" value="0.2636103151862464" />
+        <entry key="app/src/main/res/layout/epoxy_item_holder_two.xml" value="0.36277173913043476" />
+        <entry key="app/src/main/res/layout/epoxy_item_title.xml" value="0.2730496453900709" />
+        <entry key="app/src/main/res/layout/epoxy_item_under_line.xml" value="0.2730496453900709" />
+        <entry key="app/src/main/res/layout/epoxy_view_button.xml" value="0.36277173913043476" />
+        <entry key="app/src/main/res/layout/epoxy_view_first.xml" value="0.2920634920634921" />
+        <entry key="app/src/main/res/layout/epoxy_view_holder.xml" value="0.23529411764705882" />
+        <entry key="app/src/main/res/layout/epoxy_view_load_more.xml" value="0.3390625" />
+        <entry key="app/src/main/res/layout/epoxy_view_second.xml" value="0.4121376811594203" />
+        <entry key="app/src/main/res/layout/epoxy_view_text.xml" value="0.2730496453900709" />
+        <entry key="app/src/main/res/layout/epoxy_view_third.xml" value="0.2730496453900709" />
         <entry key="app/src/main/res/layout/item_chip.xml" value="0.5614583333333333" />
         <entry key="app/src/main/res/layout/item_feed_first.xml" value="0.5614583333333333" />
         <entry key="app/src/main/res/layout/item_feed_second.xml" value="0.5614583333333333" />
-        <entry key="app/src/main/res/layout/item_feed_third.xml" value="0.5614583333333333" />
+        <entry key="app/src/main/res/layout/item_feed_third.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_header_text.xml" value="0.1636308439587128" />
+        <entry key="app/src/main/res/layout/test_test.xml" value="0.36277173913043476" />
+        <entry key="app/src/main/res/layout/vertical_linear_group.xml" value="0.3234375" />
+        <entry key="app/src/main/res/layout/view_holder_item.xml" value="0.23529411764705882" />
       </map>
     </option>
   </component>
