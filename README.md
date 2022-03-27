@@ -32,3 +32,6 @@
 * From RecyclerView To Epoxy
 
 <img src="https://user-images.githubusercontent.com/52733201/160290726-81f232ed-af0e-4e07-ad87-6203e3385f5e.gif" width="500" height="700">
+
+
+Epoxy에 관하여 Click! [Epoxy Concepts](https://www.notion.so/imwj/Epoxy-1-Concepts-055df22c9e2a4ed09c6164e3c2fcc501)
